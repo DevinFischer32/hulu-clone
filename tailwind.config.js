@@ -10,5 +10,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [
+    "postcss-import",
+    "tailwindcss",
+    "autoprefixer",
+    require("tailwind-scrollbar-hide"),
+  ],
 };
