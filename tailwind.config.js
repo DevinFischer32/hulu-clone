@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       screens: {
@@ -6,10 +10,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer",
-    require("tailwind-scrollbar-hide"),
-  ],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
